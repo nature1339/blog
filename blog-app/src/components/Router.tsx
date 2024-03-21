@@ -1,5 +1,5 @@
 import { Route, Routes, Navigate } from "react-router-dom"; //navigate는 다른 페이지 갔을때 강제로 메인페이지로 가게하는것
-import Home from "../pages/home/home";
+import Home from "../pages/home";
 import PostList from "../pages/posts";
 import PostDetail from "../pages/posts/detail";
 import PostNew from "../pages/posts/nes";
