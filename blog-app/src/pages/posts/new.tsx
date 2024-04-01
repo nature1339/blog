@@ -1,12 +1,12 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
-import PostDetail from "components/PostDetail";
+import PostForm from "components/PostForm";
 
-export default function PostPage() {
+export default function PostNew() {
   return (
     <>
       <Header />
-      <PostDetail />
+      <PostForm />
       <Footer />
     </>
   );
