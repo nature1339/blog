@@ -14,7 +14,7 @@ export default function PostForm() {
         <textarea name="content" id="content" required />
       </div>
       <div className="form_block">
-        <input type="submit" value="제출" className="form_btn-submit" />
+        <input type="submit" value="제출" className="form_btn--submit" />
       </div>
     </form>
   );

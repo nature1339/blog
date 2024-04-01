@@ -45,6 +45,7 @@ footer {
   background-color: #f2f2f2;
   min-height: 40px;
   padding: 20px 40px;
+  font-size: 14px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -338,4 +339,58 @@ input#img-3:checked ~ .carousel__dots label#img-dot-3 {
 
 input:checked + .carousel__slide-container .nav label {
   display: block;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.form input {
+  height: 20px;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 0.3rem;
+  border: 1px solid light grey;
+  width: 96%;
+  max-width: 680px;
+}
+.form textarea {
+  height: 400px;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 1.5;
+  border: 1px solid light grey;
+  width: 96%;
+  max-width: 680px;
+}
+
+.form .form_block {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.form .form_btn--submit {
+  width: 100%;
+  height: 48px;
+  padding: 10px 10px;
+  float: right;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: #2563eb;
+  color: white;
+}
+
+.form .form_btn--submit:hover,
+.form .form_btn--submit:focus {
+  background-color: #1945a4;
 }
