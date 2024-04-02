@@ -140,10 +140,20 @@ footer a:hover {
 .post_delete:focus {
   color: black;
 }
+.post_delete {
+  cursor: pointer;
+}
 
 .post_edit:hover,
-.post_edit:focus {
+.post_edit:focus,
+.post_edit a:hover,
+.post_edit a:focus {
   color: black;
+}
+
+.post_edit a {
+  text-decoration: none;
+  color: grey;
 }
 
 /* post detail */
@@ -393,4 +403,9 @@ input:checked + .carousel__slide-container .nav label {
 .form .form_btn--submit:hover,
 .form .form_btn--submit:focus {
   background-color: #1945a4;
+}
+
+.post_edit a {
+  text-decoration: none;
+  color: grey;
 }
