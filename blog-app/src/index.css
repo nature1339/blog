@@ -409,3 +409,23 @@ input:checked + .carousel__slide-container .nav label {
   text-decoration: none;
   color: grey;
 }
+
+/*login form*/
+.form--lg {
+  min-height: 70vh;
+  margin-top: 10vh;
+}
+.form_title {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.form_link {
+  margin-left: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+.form_link:hover,
+.form_link:hover {
+  color: black;
+}
