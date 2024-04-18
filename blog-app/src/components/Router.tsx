@@ -10,13 +10,17 @@ import SignupPage from "pages/signup";
 
 interface RouterProps {
   isAutheticated: boolean;
+  setIsAuthenticated: (isAuthenticated: boolean) => void;
 }
 
-export default function Router({ isAutheticated }: RouterProps) {
+export default function Router({
+  isAutheticated,
+  setIsAuthenticated,
+}: RouterProps) {
   return (
     <>
       <Routes>
-        {isAutheticated ? (
+        {isAutheticated ? ( //login된상태
           <>
             <Route path="/" element={<Home />} />
             <Route path="/posts" element={<PostList />} />
@@ -24,15 +28,19 @@ export default function Router({ isAutheticated }: RouterProps) {
             <Route path="/posts/new" element={<PostNew />} />
             <Route path="/posts/edit/:id" element={<PostEdit />} />
             <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signup" element={<SignupPage />} />
             <Route path="*" element={<Navigate replace to="/" />} />
           </>
         ) : (
           <>
-            <Route path="/login" element={<LoginPage />} />
+            <Route
+              path="/login"
+              element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
+            />
             <Route path="/signup" element={<SignupPage />} />
-            <Route path="*" element={<LoginPage />} />
+            <Route
+              path="*"
+              element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
+            />
           </>
         )}
       </Routes>
