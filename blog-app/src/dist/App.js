@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var react_1 = require("react");
-var firebaseApp_1 = require("FirebaseApp");
+var firebaseApp_1 = require("firebaseApp");
 var auth_1 = require("firebase/auth");
 var react_toastify_1 = require("react-toastify");
 require("react-toastify/dist/ReactToastify.css");

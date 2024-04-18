@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { app } from "FirebaseApp";
+import { app } from "firebaseApp";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export default function LoginForm(props: {

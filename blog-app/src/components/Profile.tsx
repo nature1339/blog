@@ -1,6 +1,6 @@
 import AuthContext from "context/AuthContext";
 import { getAuth, signOut } from "firebase/auth";
-import { app } from "FirebaseApp";
+import { app } from "firebaseApp";
 import { useContext } from "react";
 import { toast } from "react-toastify";
 
